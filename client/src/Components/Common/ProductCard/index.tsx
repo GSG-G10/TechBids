@@ -64,7 +64,6 @@ const ProductCard : any = ({
       )}
       <CardMedia
         component="img"
-        height="140"
         image={image}
         alt="product"
       />
