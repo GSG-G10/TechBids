@@ -49,6 +49,7 @@ ALTER DATABASE {database name} OWNER TO {user name};
 `\i server/database/config/build.sql` .
 
 
+
 ### Start the App :-
 To start the App Locally you can start the server First then start client-side or vice versa!
 
