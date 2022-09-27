@@ -52,5 +52,8 @@
     "lint",
     "lint-client",
     "test"
-  ]
+  ],
+  "engines": {
+    "node": "16.16.0"
+  }
 }
