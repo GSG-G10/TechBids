@@ -89,7 +89,7 @@ const Bids : React.FC = () => {
           <BidsStatusCheckBox setPage={setPage} status={status} setStatus={setStatus} />
         </div>
         <div className="side-container">
-          <div className="card-container">
+          <div className="product-card-container">
             {isLoading && Array.from(new Array(3)).map(() => <Skeleton variant="rectangular" width="30%" height={300} />)}
             {
               !isLoading && (products.length ? products.map((item:itemProp) => (
@@ -109,7 +109,14 @@ const Bids : React.FC = () => {
             }
           </div>
           {count > 6
-            ? <Pagination count={Math.ceil(count / 6)} page={page} onChange={handleChange} />
+            ? (
+              <Pagination
+                count={Math.ceil(count / 6)}
+                page={page}
+                onChange={handleChange}
+                sx={{ margin: 'auto' }}
+              />
+            )
             : null}
 
         </div>
